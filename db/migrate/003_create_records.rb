@@ -7,6 +7,7 @@ class CreateRecords < ActiveRecord::Migration[5.0]
       t.integer :deadlift
       t.integer :squat
       t.text :personal_notes
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
