@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class RecordsController < ApplicationController
   before_action :set_record, only: [:show, :update, :destroy]
 
@@ -46,6 +47,6 @@ class RecordsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def record_params
-      params.require(:record).permit(:chest, :tricep, :bicep, :deadlift, :squat, :personal_notes)
+      params.require(:record).permit(:chest, :tricep, :bicep, :deadlift, :squat, :personal_notes, :user_id)
     end
 end
