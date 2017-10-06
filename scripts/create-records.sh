@@ -9,12 +9,12 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --data '{
     "record": {
-      "chest": "275",
-      "tricep": "80",
-      "bicep": "100",
-      "deadlift": "315",
+      "chest": "305",
+      "tricep": "120",
+      "bicep": "80",
+      "deadlift": "365",
       "squat": "405",
-      "personal_notes": "pump up",
+      "personal_notes": "Power Level Over 9000!!! Get Swoll",
       "user_id": "1"
     }
   }'
