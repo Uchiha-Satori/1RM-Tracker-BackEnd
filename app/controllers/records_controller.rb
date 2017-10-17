@@ -4,7 +4,7 @@ class RecordsController < ApplicationController
 
   # GET /records
   def index
-    @records = Record.all
+    @records = Record.order(created_at: :asc)
 
     render json: @records
   end
